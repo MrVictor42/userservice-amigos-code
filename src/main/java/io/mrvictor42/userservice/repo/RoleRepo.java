@@ -1,0 +1,8 @@
+package io.mrvictor42.userservice.repo;
+
+import io.mrvictor42.userservice.domain.Role;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RoleRepo extends JpaRepository<Role, Long> {
+    Role findByName(String name);
+}
